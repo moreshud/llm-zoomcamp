@@ -73,7 +73,7 @@ work locally, you only need to change a few lines of code.
   <img src="https://markdown-videos-api.jorgenkh.no/youtube/HObjFso2UJE">
 </a>
 
-[Open AI Alternatives](open-ai-alternatives.md)
+[Open AI Alternatives](../open-ai-alternatives.md)
 
 
 ## 1.5 Cleaned RAG flow
@@ -105,6 +105,7 @@ docker run -it \
     -p 9300:9300 \
     -e "discovery.type=single-node" \
     -e "xpack.security.enabled=false" \
+    -e "ES_JAVA_OPTS=-Xms512m -Xmx512m" \
     docker.elastic.co/elasticsearch/elasticsearch:8.4.3
 ```
 
@@ -152,7 +153,7 @@ Query:
 ```
 
 We use `"type": "best_fields"`. You can read more about 
-different types of `multi_match` search in [elastic-search.md](elastic-search.md).
+different types of `multi_match` search in [elastic-search.md](../elastic-search.md).
 
 # 1.7 Homework
 More information [here](../cohorts/2024/01-intro/homework.md).
